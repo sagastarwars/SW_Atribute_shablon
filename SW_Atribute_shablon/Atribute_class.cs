@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SW_Character_Class;
-
-namespace SW_Character_Class
+﻿namespace Attribute_libs
 {
     public class Atribute_class
     {
