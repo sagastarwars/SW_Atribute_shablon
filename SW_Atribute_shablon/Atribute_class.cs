@@ -32,7 +32,9 @@
 
         private string path_read_description; // Путь к файлу для вычитывания текстового описания атрибута
 
-        
+        private int attribute_cost_for_atr,
+                    attribute_cost_for_exp;
+
         #endregion
 
         #region // Конструктор шаблона
@@ -48,10 +50,10 @@
         private void Set_error_code(int insert_value) { Error_code = insert_value; }
         public string Get_error_msg()
         {
-            switch(Error_code)
+            switch (Error_code)
             {
-                case 0: 
-                    Error_msg = ""; 
+                case 0:
+                    Error_msg = "";
                     break;
                 case 1:
                     Error_msg = "Нет возможности увеличить значение данного атрибута!";
@@ -144,16 +146,16 @@
         public void Set_atr_score(int insert_value) { score = insert_value; }
         public int Get_atribute_score() { return score; }
         public void Set_description(string insert_text) { description = insert_text; }
-        public string Get_description () { return description; }
+        public string Get_description() { return description; }
 
         #region //Лимит значения атрибута по возрасту персонажа
-        public void Set_child_attribute_limit       (int insert_int) { child_attribute_limit = insert_int; }                public int Get_child_attribute_limit()          { return child_attribute_limit; }
-        public void Set_teen_attribute_limit        (int insert_int) { teen_attribute_limit = insert_int; }                 public int Get_teen_attribute_limit()           { return teen_attribute_limit; }
-        public void Set_adult_attribute_limit       (int insert_int) { adult_attribute_limit = insert_int; }                public int Get_adult_attribute_limit()          { return adult_attribute_limit; }
-        public void Set_middle_attribute_limit      (int insert_int) { middle_attribute_limit = insert_int; }               public int Get_middle_attribute_limit()         { return middle_attribute_limit; }
-        public void Set_old_attribute_limit         (int insert_int) { old_attribute_limit = insert_int; }                  public int Get_old_attribute_limit()            { return old_attribute_limit; }
-        public void Set_eldery_attribute_limit      (int insert_int) { eldery_attribute_limit = insert_int; }               public int Get_eldery_attribute_limit()         { return eldery_attribute_limit; }
-        public void Set_unknown_age_attribute_limit (int insert_int) { unknown_age_attribute_limit = insert_int; }          public int Get_unknown_age_attribute_limit()    { return unknown_age_attribute_limit; }
+        public void Set_child_attribute_limit(int insert_int) { child_attribute_limit = insert_int; } public int Get_child_attribute_limit() { return child_attribute_limit; }
+        public void Set_teen_attribute_limit(int insert_int) { teen_attribute_limit = insert_int; } public int Get_teen_attribute_limit() { return teen_attribute_limit; }
+        public void Set_adult_attribute_limit(int insert_int) { adult_attribute_limit = insert_int; } public int Get_adult_attribute_limit() { return adult_attribute_limit; }
+        public void Set_middle_attribute_limit(int insert_int) { middle_attribute_limit = insert_int; } public int Get_middle_attribute_limit() { return middle_attribute_limit; }
+        public void Set_old_attribute_limit(int insert_int) { old_attribute_limit = insert_int; } public int Get_old_attribute_limit() { return old_attribute_limit; }
+        public void Set_eldery_attribute_limit(int insert_int) { eldery_attribute_limit = insert_int; } public int Get_eldery_attribute_limit() { return eldery_attribute_limit; }
+        public void Set_unknown_age_attribute_limit(int insert_int) { unknown_age_attribute_limit = insert_int; } public int Get_unknown_age_attribute_limit() { return unknown_age_attribute_limit; }
         /*
         public void Set_age_attribute_limit(string age_status)
         {
@@ -181,11 +183,11 @@
         #endregion
 
         #region //Лимит значения атрибута по рангу персонажа
-        public void Set_private_range_attribute_limit   (int insert_int) { Private_range_limit = insert_int; }          public int Get_private_range_attribute_limit()  { return Private_range_limit; }
-        public void Set_veteran_range_attribute_limit   (int insert_int) { Veteran_range_limit = insert_int; }          public int Get_veteran_range_attribute_limit()  { return Veteran_range_limit; }
-        public void Set_hero_range_attribute_limit      (int insert_int) { Hero_range_limit = insert_int; }             public int Get_hero_range_attribute_limit()     { return Hero_range_limit; }
-        public void Set_epic_range_attribute_limit      (int insert_int) { Epic_range_limit = insert_int; }             public int Get_epic_range_attribute_limit()     { return Epic_range_limit; }
-        public void Set_immortal_range_attribute_limit  (int insert_int) { Immortal_range_limit = insert_int; }         public int Get_immortal_range_attribute_limit() { return Immortal_range_limit; }
+        public void Set_private_range_attribute_limit(int insert_int) { Private_range_limit = insert_int; } public int Get_private_range_attribute_limit() { return Private_range_limit; }
+        public void Set_veteran_range_attribute_limit(int insert_int) { Veteran_range_limit = insert_int; } public int Get_veteran_range_attribute_limit() { return Veteran_range_limit; }
+        public void Set_hero_range_attribute_limit(int insert_int) { Hero_range_limit = insert_int; } public int Get_hero_range_attribute_limit() { return Hero_range_limit; }
+        public void Set_epic_range_attribute_limit(int insert_int) { Epic_range_limit = insert_int; } public int Get_epic_range_attribute_limit() { return Epic_range_limit; }
+        public void Set_immortal_range_attribute_limit(int insert_int) { Immortal_range_limit = insert_int; } public int Get_immortal_range_attribute_limit() { return Immortal_range_limit; }
 
         /*
         public void Set_range_attribute_limit(string insert_range)
@@ -242,6 +244,11 @@
 
         public void Set_atribute_code(int insert_int) { atribute_code = insert_int; }
         public int Get_atribute_code() { return atribute_code; }
+
+        public void Set_attribute_cost_for_atr(int insert_int) { attribute_cost_for_atr = insert_int; }
+        public int Get_attribute_cost_for_atr() { return attribute_cost_for_atr; }
+        public void Set_attribute_cost_for_exp(int insert_int) { attribute_cost_for_exp = insert_int; }
+        public int Get_attribute_cost_for_exp() { return attribute_cost_for_exp; }
         #endregion
 
         #endregion
